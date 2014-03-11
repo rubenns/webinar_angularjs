@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="webinar-webapp:war exploded">
+    <output-path>$PROJECT_DIR$/webinar-webapp/target/webinar-webapp</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="webinar-webapp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webinar-webapp" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

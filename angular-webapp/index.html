@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="webinar"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" ng-app="webinar"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" ng-app="webinar"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" ng-app="webinar"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title ng-bind="title"> -- ANGULAR JS -- WEBINAR --</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="../lang/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../lang/favicon.ico" type="image/x-icon" favicon.ico>
+
+    <!-- load css -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-responsive.min.css"/>
+    <!-- load own css -->
+    <link rel="stylesheet" type="text/css" href="app/css/bootstrap-override.css"/>
+    <link rel="stylesheet" type="text/css" href="app/css/app.css"/>
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="app/img/imagen_banner_CMMI.png" />
+                </div>
+                <div class="item">
+                    <img src="app/img/mimacom_slide_contact.jpg" />
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+
+         <div id="header" class="col-xs-12">
+             <div class="row">
+                <div language-selector class="nav nav-pills pull-right"></div>
+
+             </div>
+         </div>
+    </div>
+    <div id="gov-link" class="col-xs-12 text-right">
+        <a href="http://www.mimacom.es">{{i18n('webinar.link')}}</a>
+    </div>
+    <div class="row">
+        <div ng-view class="col-xs-12 content-tp"></div>
+    </div>
+
+
+    <div class="row">
+        <div id="footer" class="col-xs-12 text-center">
+            <small>
+                ANGULAR JS WEBINAR.
+            </small>
+        </div>
+    </div>
+</div>
+
+
+<!-- Load javascript to render first the html -->
+<script src="lib/underscore/underscore-1.6.0.min.js"></script>
+<script src="lib/jquery/jquery-2.1.0.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/angular/angular-1.2.13.js"></script>
+<script src="lib/angular/angular-route-1.2.13.min.js"></script>
+<script src="lib/i18n/jquery.i18n.properties-1.0.9.js"></script>
+
+<!-- Modules -->
+<script src="app/js/core/coreModule.js"></script>
+<script src="app/js/core/i18nService.js"></script>
+
+<script src="app/js/components/componentsModule.js"></script>
+<script src="app/js/components/languageSelector.js"></script>
+<script src="app/js/components/genericDirectives.js"></script>
+<script src="app/js/components/validationDirectives.js"></script>
+
+<script src="app/js/welcome/welcomeModule.js"></script>
+
+<script src="app/js/signup/signupModule.js"></script>
+<script src="app/js/signup/signupService.js"></script>
+<script src="app/js/signup/signupCtrl.js"></script>
+
+
+
+<script src="app/js/app.js"></script>
+</body>
+</html>

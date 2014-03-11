@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webinar-webapp:war">
+    <output-path>$PROJECT_DIR$/webinar-webapp/target</output-path>
+    <root id="archive" name="webinar-webapp.war">
+      <element id="artifact" artifact-name="webinar-webapp:war exploded" />
+    </root>
+  </artifact>
+</component>

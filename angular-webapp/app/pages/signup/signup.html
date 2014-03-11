@@ -1,0 +1,70 @@
+<div class="content-box-outer">
+    <div class="content-box-header">
+      SINGUP
+    </div>
+    <div class="content-box-inner">
+
+        <form name="signupForm" id="signupForm" ng-submit="sendContact(signup)">
+            <div class="alert alert-success alert-dismissable" ng-show="successSignup" >
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <span ng-bind="message"></span>
+            </div>
+            <div class="alert alert-error alert-dismissable" ng-show="errorSignup" >
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <span ng-bind="message"></span>
+            </div>
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="alert alert-info">
+                        <div class="content-group">
+                            <div class="content-icon icon-info-sign"></div>
+                                {{i18n('webinar.signup.form')}}
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <label for="lastName" class="mandatory">
+                                {{i18n('webinar.lastname')}}
+                            </label>
+                            <input id="lastName" name="lastName" type="text" class="span12" ng-model="signup.lastName" required
+                                   maxlength="50">
+                        </div>
+                        <div class="span6">
+                            <label for="firstName" class="mandatory">
+                                {{i18n('webinar.firstname')}}
+                            </label>
+                            <input id="firstName" name="firstName" type="text" class="span12" ng-model="signup.firstName"
+                                   required
+                                   maxlength="50">
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <label for="email" class="mandatory">
+                                {{i18n('webinar.email')}}
+                            </label>
+                            <input id="email" name="email" type="text" class="span12" ng-model="signup.contactEmail" required
+                                   maxlength="60">
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span12">
+                           <span>
+                               <msg key="text.requiredFields">
+                                   * Required Fields.
+                               </msg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="span6 right-side-space"></div>
+            </div>
+            <div class="content-box-footer btn-right">
+                <button id="send" class="custom-icon custom-icon-accept form-right button-height">
+                    {{i18n('webinar.button.submit')}}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

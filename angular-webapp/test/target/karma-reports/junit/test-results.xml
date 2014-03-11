@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 33.0.1750 (Windows 7)" package="" timestamp="2014-03-11T09:48:50" id="0" hostname="mima-es-13" tests="11" errors="0" failures="0" time="0.141">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36"/>
+    </properties>
+    <testcase name="it should add active class when expression evaluates to true" time="0.055" classname="Chrome 33.0.1750 (Windows 7).genericDirectives activeIf"/>
+    <testcase name="it should remove active class when expression evaluates to false" time="0.01" classname="Chrome 33.0.1750 (Windows 7).genericDirectives activeIf"/>
+    <testcase name="it should watch change in attributes and remove or add active class" time="0.006" classname="Chrome 33.0.1750 (Windows 7).genericDirectives activeIf"/>
+    <testcase name="it should watch change in attributes from method and remove or add active class" time="0.005" classname="Chrome 33.0.1750 (Windows 7).genericDirectives activeIf"/>
+    <testcase name="should exist when the module has been loaded" time="0.017" classname="Chrome 33.0.1750 (Windows 7).signupCtrl"/>
+    <testcase name="should call to signupService when function to singup is called" time="0.009" classname="Chrome 33.0.1750 (Windows 7).signupCtrl"/>
+    <testcase name="should set on the scope a success message when signup is success" time="0.017" classname="Chrome 33.0.1750 (Windows 7).signupCtrl"/>
+    <testcase name="should set on the scope a fail message when signup is error" time="0.01" classname="Chrome 33.0.1750 (Windows 7).signupCtrl"/>
+    <testcase name="should exist when ls module has been loaded" time="0.002" classname="Chrome 33.0.1750 (Windows 7).signupService"/>
+    <testcase name="should invoke the signup to post call success" time="0.006" classname="Chrome 33.0.1750 (Windows 7).signupService"/>
+    <testcase name="should invoke the signup to post call error" time="0.004" classname="Chrome 33.0.1750 (Windows 7).signupService"/>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
